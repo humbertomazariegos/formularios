@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ejemplo</title>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-container">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-3">
+                    <img src="./assets/img/logo-ug.png" alt="Universidad Galileo" width="100%">
+               </div>
+               <div class="col-sm-9">
+                   <h1>Formulario de registro</h1>
+               </div>
+           </div>
+           <div class="card mt-2">
+               <div class="card-body">
+                <form class="mt-4">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="email">Correo electrónico <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                            <small id="email_error" class="form-text text-danger">&nbsp;</small>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="user">Usuario <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="user" placeholder="Usuario">
+                            <small id="user_error" class="form-text text-danger">&nbsp;</small>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="user">DPI <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="dpi" placeholder="DPI">
+                            <small id="dpi_error" class="form-text text-danger">&nbsp;</small>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="user">Teléfono <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="phone" placeholder="Teléfono">
+                            <small id="phone_error" class="form-text text-danger">&nbsp;</small>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="birht_date">Fecha de nacimiento <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="birht_date" placeholder="Fecha de nacimiento">
+                            <small id="birht_date_error" class="form-text text-danger">&nbsp;</small>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="password">Contraseña <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" id="password" pslaceholder="Contraseña">
+                            <small id="password_error" class="form-text text-danger">&nbsp;</small>
+                        </div>
+                        <div class="form-group col-sm-12 text-right mt-3 mb-3">
+                            <small class="form-text"><span class="text-danger">*</span> Campo obligatorio</small>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <button id="btn_submit" class="mb-3 btn btn-primary btn-login">Iniciar Sesion</button>
+                        </div>    
+                    </div>
+                  </form>
+               </div>
+           </div>
+       </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
